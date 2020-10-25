@@ -1,0 +1,27 @@
+{
+	"name": "animated-git",
+	"displayName": "Animated Git",
+	"description": "Visualize git diffs in the editor.",
+	"version": "0.0.1",
+	"repository": "github:dechov/animated-git",
+	"publisher": "PaulDechov",
+	"engines": {
+		"vscode": "^1.48.0"
+	},
+	"activationEvents": [
+		"onCommand:animated-git.diff"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "animated-git.diff",
+				"title": "Animated Git Diff"
+			}
+		]
+	},
+	"dependencies": {
+		"parse-diff": "^0.7.1",
+		"simple-git": "^2.21.0"
+	}
+}
